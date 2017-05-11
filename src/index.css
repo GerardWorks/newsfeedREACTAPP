@@ -11,7 +11,7 @@ img{
   width: 50%;
 }
 .menubar{
-  height:77vh;
+  height:85vh;
   overflow: scroll;
 }
 .menuback{
@@ -20,6 +20,7 @@ img{
 footer{
   position: fixed;
   width: 100%;
+  height:5vh;
   bottom: 0;
   left: 0;
   background-color: black;
