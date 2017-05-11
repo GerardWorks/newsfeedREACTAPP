@@ -68,15 +68,18 @@ class App extends Component {
         <div className="App-header">
           <h2>Global News Feed</h2>
         </div>
-      <div className="container-fluid">
-        <div className="col-sm-2 col-md-3" >
-          <NewsList newsList={this.state.newsProvider} retrieveNews={this.changeNewsProvider} />
+        <div className="container-fluid">
+          <div className="col-sm-2 col-md-3 menubar menuback" >
+            <NewsList newsList={this.state.newsProvider} retrieveNews={this.changeNewsProvider} />
+          </div>
+          <div className="col-sm-10 col-md-9 menubar">
+            <h2 id="newsProvider">{this.state.selectedNews}</h2>
+            <NewsFeed newsFeed={this.state.newsFeed}/>
+          </div>
         </div>
-        <div className="col-sm-10 col-md-9">
-          <h2 id="newsProvider">{this.state.selectedNews}</h2>
-          <NewsFeed newsFeed={this.state.newsFeed}/>
-        </div>
-      </div>
+        <footer>
+          <h3>Created by Gerard Ho with NodeJS and React</h3>
+        </footer>
       </div>
     );
   }
